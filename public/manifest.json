@@ -1,0 +1,25 @@
+{
+  "name": "hh-ts-ext",
+  "manifest_version": 3,
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "webNavigation"
+  ],
+  "icons": {
+    "32": "logo_BIG.png"
+  }
+}
